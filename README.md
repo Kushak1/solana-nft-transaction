@@ -10,13 +10,15 @@ You can first check functionality in devnet script using demo accounts
 # Quick Start
 
 - npm innit
-- npm install --save @solana/web3.js
-- npm i @solana/spl-token
+- npm install @solana/web3.js
+- npm install @solana/spl-token
+- npm install @solana/buffer-layout
 
 	
 ## Requirements
 	@solana/web3.js
 	@solana/spl-token
+	@solana/buffer-layout
 
 ## Sidenotes
 
