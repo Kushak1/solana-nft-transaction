@@ -11,8 +11,8 @@ const splToken = require('@solana/spl-token');
   
     const myKeypair = web3.Keypair.fromSecretKey(secretKey);
 
-    const tokenMintAddress =  new web3.PublicKey('6qdPa5Q6EZy8SKEdYL1uDrfaMN4WciyH3ja7PNw8Mnoy');
-    const nftReciver =  new web3.PublicKey('6YMyYFmNmdA6ymfJsdcWkvP4wpjzFCRbZgNvox1UJxYg');
+    const tokenMintAddress =  new web3.PublicKey('TOKEN MINT ADDRES');
+    const nftReciver =  new web3.PublicKey('WALLET ADDRES TO SEND');
     
     let my_token_account = await splToken.getOrCreateAssociatedTokenAccount(
       connection, 
@@ -22,7 +22,7 @@ const splToken = require('@solana/spl-token');
       commitment = 'finalized', 
       allowOwnerOffCurve = false, 
       confirmOptions = null,
-      programId = new web3.PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA'), 
+      programId = splToken.TOKEN_PROGRAM_ID, 
       associatedTokenProgramId = splToken.ASSOCIATED_TOKEN_PROGRAM_ID,
     )
     let reciver_token_account = await splToken.getOrCreateAssociatedTokenAccount(
