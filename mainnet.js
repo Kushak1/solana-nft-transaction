@@ -7,14 +7,7 @@ const splToken = require('@solana/spl-token');
     const connection = new web3.Connection(web3.clusterApiUrl('mainnet-beta'));
 
     //Generate keypair from Uint8Array(Make sure it's right format! i.e. [123,123,123...])
-    let secretKey = Uint8Array.from([
-        250,  15, 219,  15, 195, 164,  31, 208, 135,  29, 247,
-        201, 198, 251, 156, 172, 127,  59,  67, 196, 186, 109,
-        156, 198, 178,  14, 137, 224, 250, 153, 233,  23,  96,
-        191,  51, 236, 127,  66,  31,  99,   0, 250, 192, 199,
-         20, 247, 125,  45, 173,   9, 140, 232, 112, 142,  59,
-         31, 103,   7, 106, 152, 128, 113, 235,  92
-      ]);
+    let secretKey = Uint8Array.from('YOUR KEY HERE');
   
     const myKeypair = web3.Keypair.fromSecretKey(secretKey);
 
